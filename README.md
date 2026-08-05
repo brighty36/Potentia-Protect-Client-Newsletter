@@ -27,6 +27,15 @@ contact panel).
 ## Design notes
 - **Responsive:** two-column card grid on desktop collapses to a single column
   on phones; the Top 3 circles and contact panel also stack.
+- **Equal-height cards:** side-by-side cards in each row are matched in height so
+  the gradient fills the whole box — no dark gaps between mismatched cards. On
+  mobile each card sizes to its own content.
+- **Why no click-to-reveal accordion:** interactive "click heading to expand"
+  isn't reliable in email — JavaScript is always blocked, and Gmail/Outlook/most
+  webmail strip the CSS/`<details>` tricks that fake it. If the toggle is
+  stripped, those clients would show headings with no content, so the content is
+  always kept visible. (A real accordion is only safe on a hosted web page, e.g.
+  a "view in browser" landing page — happy to build that separately if wanted.)
 - **Everything except the two photos is pure HTML/CSS** — the dark background,
   gradient cards, chips, circles and contact panel need no image hosting.
 - **Outlook:** CSS gradients aren't supported by Outlook's Word engine, so cards
