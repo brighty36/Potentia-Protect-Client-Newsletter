@@ -27,9 +27,11 @@ contact panel).
 ## Design notes
 - **Responsive:** two-column card grid on desktop collapses to a single column
   on phones; the Top 3 circles and contact panel also stack.
-- **Equal-height cards:** side-by-side cards in each row are matched in height so
-  the gradient fills the whole box — no dark gaps between mismatched cards. On
-  mobile each card sizes to its own content.
+- **Masonry cards:** the Key Pillars use two independent columns, so cards flow
+  and stagger to their own height instead of aligning row-by-row — this removes
+  the dark gaps caused by mismatched card lengths. Respondent Verification is a
+  card in the left column. The two columns are balanced to end at roughly the
+  same point. On mobile the columns stack (left column cards first, then right).
 - **Why no click-to-reveal accordion:** interactive "click heading to expand"
   isn't reliable in email — JavaScript is always blocked, and Gmail/Outlook/most
   webmail strip the CSS/`<details>` tricks that fake it. If the toggle is
