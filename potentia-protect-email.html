@@ -5,13 +5,16 @@
   HOW TO USE IN MAILCHIMP
   1. In your campaign, add a "Code" content block (or use the full "Paste in
      code" / HTML template) and paste EVERYTHING in this file.
-  2. Host the 2 images below in Mailchimp (Content > Content Studio, or the
-     campaign's image manager), then swap the placeholder URLs:
-        - {{VIDEO_THUMB_URL}}  -> assets/video-thumbnail.png
-        - {{SUZY_PHOTO_URL}}   -> assets/suzy-hassan.png
-     (Optional) {{POTENTIA_LOGO_URL}} -> assets/potentia-logo.png
-       The brand wordmark is drawn in text by default, so the logo image is
-       optional. If you host it, uncomment the logo <img> in the header.
+  2. Host the images below in Mailchimp (Content > Content Studio, or the
+     campaign's image manager), then swap each placeholder URL:
+        - {{POTENTIA_LOGO_URL}}  -> assets/potentia-logo.png     (header, top-right)
+        - {{VIDEO_THUMB_URL}}    -> assets/video-thumbnail.png   (video block)
+        - {{CRED_MRS_URL}}       -> assets/cred-mrs.png          (credentials)
+        - {{CRED_GDQ_URL}}       -> assets/cred-gdq.png          (credentials)
+        - {{CRED_PJR_URL}}       -> assets/cred-pjr.png          (credentials)
+        - {{AWARD_WINNER_URL}}   -> assets/award-winner.png      (contact panel)
+        - {{AWARD_COMMENDED_URL}}-> assets/award-commended.png   (contact panel)
+        - {{SUZY_PHOTO_URL}}     -> assets/suzy-hassan.png       (contact panel)
   3. Set the video link: replace {{VIDEO_URL}} (2 places) with your video URL.
   4. Everything else (dark background, gradient cards, TOP 3 circles, the
      "learn more" panel) is pure HTML/CSS — no hosting required.
@@ -75,9 +78,7 @@
                   POTENTIA
                 </td>
                 <td align="right" valign="top" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:20px;font-weight:700;color:#ff5a2c;">
-                  <!-- Optional logo image (uncomment after hosting):
-                  <img src="{{POTENTIA_LOGO_URL}}" width="120" alt="Potentia" style="display:inline-block;height:auto;"> -->
-                  Potentia<span style="color:#ff7a1a;">+</span>
+                  <img src="{{POTENTIA_LOGO_URL}}" width="130" alt="Potentia" style="display:inline-block;width:130px;max-width:130px;height:auto;border:0;">
                 </td>
               </tr>
             </table>
@@ -354,18 +355,20 @@
             </div>
           </td>
         </tr>
-        <!-- Credential chips -->
+        <!-- Credential logos -->
         <tr>
-          <td class="px" style="padding:16px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
+          <td class="px" style="padding:18px 34px 0 34px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#20143f;border:1px solid #43356e;border-radius:20px;padding:7px 14px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#e7e2f7;white-space:nowrap;">MRS Company Partner</td></tr></table></td>
-                <td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#20143f;border:1px solid #43356e;border-radius:20px;padding:7px 14px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#e7e2f7;white-space:nowrap;">ESOMAR</td></tr></table></td>
-                <td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#20143f;border:1px solid #43356e;border-radius:20px;padding:7px 14px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#e7e2f7;white-space:nowrap;">ISO 27001</td></tr></table></td>
-              </tr>
-              <tr>
-                <td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#20143f;border:1px solid #43356e;border-radius:20px;padding:7px 14px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#e7e2f7;white-space:nowrap;">Global Data Quality (GDQ)</td></tr></table></td>
-                <td style="padding:0 8px 8px 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background-color:#20143f;border:1px solid #43356e;border-radius:20px;padding:7px 14px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;color:#e7e2f7;white-space:nowrap;">PJR &mdash; ISO 27001 Registered</td></tr></table></td>
+                <td class="stack" width="33.33%" align="center" valign="middle" style="padding:6px;">
+                  <img src="{{CRED_MRS_URL}}" width="164" alt="MRS Company Partner" style="width:164px;max-width:100%;height:auto;border:0;border-radius:8px;">
+                </td>
+                <td class="stack" width="33.33%" align="center" valign="middle" style="padding:6px;">
+                  <img src="{{CRED_GDQ_URL}}" width="164" alt="Global Data Quality (GDQ)" style="width:164px;max-width:100%;height:auto;border:0;border-radius:8px;">
+                </td>
+                <td class="stack" width="33.33%" align="center" valign="middle" style="padding:6px;">
+                  <img src="{{CRED_PJR_URL}}" width="164" alt="PJR - ISO 27001 Registered (UKAS)" style="width:164px;max-width:100%;height:auto;border:0;border-radius:8px;">
+                </td>
               </tr>
             </table>
           </td>
@@ -427,12 +430,17 @@
                         <div style="font-size:14px;line-height:20px;">
                           <a href="mailto:suzy@potentia-insight.co.uk" style="color:#ffd9c7;font-weight:600;text-decoration:none;">suzy@potentia-insight.co.uk</a>
                         </div>
-                        <!-- Awards -->
-                        <div style="font-size:12px;color:#efe7f8;line-height:18px;padding-top:16px;">
-                          &#127942;&nbsp;<b>MRS Operations Awards 2025</b><br>
-                          <span style="color:#d9c9ec;">Winner &mdash; Best Place to Work (Operations)</span><br>
-                          <span style="color:#d9c9ec;">Highly Commended &mdash; Premier Award, Operational Excellence</span>
-                        </div>
+                        <!-- Awards (badge images) -->
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="padding-top:18px;">
+                          <tr>
+                            <td valign="top" style="padding:0 14px 0 0;">
+                              <img src="{{AWARD_WINNER_URL}}" width="118" alt="MRS Operations Awards 2025 - Winner, Best Place to Work (Operations)" style="width:118px;max-width:118px;height:auto;border:0;">
+                            </td>
+                            <td valign="top">
+                              <img src="{{AWARD_COMMENDED_URL}}" width="118" alt="MRS Operations Awards 2025 - Highly Commended, Premier Award: Operational Excellence" style="width:118px;max-width:118px;height:auto;border:0;">
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                       <td class="stack learn-photo" valign="middle" width="38%" align="right" style="vertical-align:middle;text-align:right;">
                         <!-- MD photo — replace {{SUZY_PHOTO_URL}} after hosting -->
