@@ -1,0 +1,140 @@
+POTENTIA PROTECT
+Our end-to-end approach to data quality
+
+Potentia delivers high-quality research through a structured quality
+framework that combines expert project management, robust quality checks
+and trusted sample sources. Quality is built into every stage, supported
+by clear processes, project checklists and continuous feedback with
+clients and suppliers.
+
+Watch our short video to learn more about how we safeguard every project
+we deliver: {{VIDEO_URL}}
+
+
+====================================================================
+KEY PILLARS
+====================================================================
+
+END-TO-END QUALITY CONTROL
+- Quality embedded at every stage (design > fieldwork > delivery)
+- Two-step checks across all processes
+- Project checklists ensure consistency, compliance, and auditability
+- Quality is built into the full lifecycle, not added at the end
+
+HANDS-ON PROJECT MANAGEMENT
+- PMs oversee all stages: questionnaire > scripting > delivery
+- Key controls: clear ownership, all changes tracked & verified, close
+  client alignment
+- Strong control reduces errors and risk
+
+STRONG QUESTIONNAIRE DESIGN
+- AI-powered Survey Intelligence tool designed to strengthen
+  questionnaires and optimise the respondent journey
+- Reviewed by experienced PMs for clarity & simplicity, no bias /
+  leading questions, and logical structure - avoiding overly long /
+  repetitive surveys and respondent fatigue
+- Better surveys drive better data quality
+
+SCRIPTING & TRANSLATION QUALITY
+- Scripting: full pre-launch testing - logic, routing, quotas. Internal
+  review before the client sees links
+- Translation: dual-layer review (PM + agency) with checks for accuracy,
+  formatting, completeness
+- Nothing goes live without full validation
+
+DUPLICATE PREVENTION
+- Prevents multiple entries via unique IDs, cookies and additional
+  checks where needed
+- Ensures one respondent = one response
+
+SAMPLE & SUPPLIER CONTROL
+- Only trusted, vetted suppliers
+- New suppliers tested before scaling; performance tracked per project
+- Poor-quality sources removed
+- Includes proprietary panels and specialist validated audiences
+- Quality starts with who you survey
+
+FIELDWORK MONITORING
+- Checked daily during fieldwork: interview length, dropout rates,
+  incidence and quotas
+- Enables real-time adjustments
+- Issues are identified and resolved early
+
+DATA VALIDATION
+- Real-time fraud detection and duplicate prevention identify suspicious
+  activity before respondents enter the survey
+- Daily automated and manual quality checks monitor live responses
+  throughout fieldwork
+- Open-ended responses are reviewed to measure engagement and validate
+  response quality
+- Low-quality, irrelevant, duplicated or suspicious responses are
+  removed, alongside inconsistent answer patterns where required
+- Combining automated technology with experienced human review helps
+  ensure only genuine, engaged respondents are included - protecting the
+  integrity of the final dataset
+
+FLEXIBLE / CUSTOM APPROACH
+- Tailored quality controls depending on sample source (client vs
+  Potentia), including email validation (identifies invalid contacts)
+  and custom quality rules
+- Adaptable but still controlled
+
+DATA PROCESSING & OUTPUT QUALITY
+- Structured workflow: interim outputs for early issue detection, final
+  validation before delivery, with PM + data team both reviewing
+- Outputs are verified, not assumed
+
+CONTINUOUS IMPROVEMENT
+- Regular team training, process reviews, and client feedback surveys
+- Ongoing refinement of methods, tools, and supplier strategy
+- Always evolving to maintain high standards
+
+RESPONDENT VERIFICATION
+- Alongside our manual quality processes, we use Alias and Verisoul to
+  verify respondent identity, prevent duplicate participation, and detect
+  fraudulent behaviour in real time
+- Giving our clients greater confidence in the quality of the data we
+  deliver
+
+
+====================================================================
+PLEDGES, STANDARDS & CREDENTIALS
+====================================================================
+
+We are committed to reducing fraud, enhancing transparency, and
+elevating industry standards. Our processes align with MRS guidelines,
+ESOMAR standards, and ISO 27001 principles. All suppliers are rigorously
+vetted against recognised industry benchmarks, ensuring quality is
+consistently upheld and underpinned by globally trusted standards.
+
+Accreditations & standards: MRS Company Partner | ESOMAR | ISO 27001 |
+Global Data Quality (GDQ) | PJR - ISO 27001 Registered
+
+
+====================================================================
+TOP 3 TAKEAWAYS
+====================================================================
+
+1. Quality is embedded at every stage
+2. Aligned with industry standards
+3. People + process drive reliable data
+
+
+====================================================================
+TO LEARN MORE
+====================================================================
+
+Suzy Hassan
+Managing Director & Co-Founder
+suzy@potentia-insight.co.uk
+
+Awards:
+- MRS Operations Awards 2025 - Winner, Best Place to Work (Operations)
+- MRS Operations Awards 2025 - Highly Commended, Premier Award:
+  Operational Excellence
+
+
+--------------------------------------------------------------------
+(c) Potentia Insight. All rights reserved.
+Unsubscribe: *|UNSUB|*
+Update preferences: *|UPDATE_PROFILE|*

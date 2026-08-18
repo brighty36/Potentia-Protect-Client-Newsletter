@@ -8,21 +8,35 @@ contact panel).
 | File | Purpose |
 |------|---------|
 | `potentia-protect-email.html` | The email. Paste the whole file into Mailchimp. |
+| `potentia-protect-email.txt` | Plain-text version (Mailchimp "Plain-Text" tab). |
+| `assets/potentia-logo.png` | Potentia+ logo — header, top-right. |
 | `assets/video-thumbnail.png` | Still for the "Watch our short video" block. |
+| `assets/cred-mrs.png` | MRS Company Partner logo (credentials row). |
+| `assets/cred-gdq.png` | Global Data Quality (GDQ) logo (credentials row). |
+| `assets/cred-pjr.png` | PJR / ISO 27001 (UKAS) logo (credentials row). |
+| `assets/award-winner.png` | MRS Operations Awards 2025 — Winner badge. |
+| `assets/award-commended.png` | MRS Operations Awards 2025 — Highly Commended badge. |
 | `assets/suzy-hassan.png` | MD photo for the "To learn more" panel. |
-| `assets/potentia-logo.png` | Optional Potentia+ wordmark (header uses text by default). |
 
 ## How to use in Mailchimp
 1. Create a campaign → **Code your own → Paste in code**, and paste the entire
    contents of `potentia-protect-email.html`.
-2. Upload the two images in `assets/` to Mailchimp (Content Studio / the
-   campaign image manager) and copy their hosted URLs.
+2. Upload the images in `assets/` to Mailchimp (Content Studio / the campaign
+   image manager) and copy their hosted URLs.
 3. In the pasted HTML, replace these placeholders:
+   - `{{POTENTIA_LOGO_URL}}` → hosted URL of `potentia-logo.png`
    - `{{VIDEO_THUMB_URL}}` → hosted URL of `video-thumbnail.png`
+   - `{{CRED_MRS_URL}}` / `{{CRED_GDQ_URL}}` / `{{CRED_PJR_URL}}` → the three credential logos
+   - `{{AWARD_WINNER_URL}}` / `{{AWARD_COMMENDED_URL}}` → the two award badges
    - `{{SUZY_PHOTO_URL}}` → hosted URL of `suzy-hassan.png`
    - `{{VIDEO_URL}}` (appears twice) → the link to your video
-   - `{{POTENTIA_LOGO_URL}}` → *optional*; only if you uncomment the logo `<img>` in the header
 4. Send yourself a test to check on desktop, mobile and (if you use it) Outlook.
+
+**Logo note:** the credential and award logos were extracted from the source
+PDF, so they are only as sharp as the originals. The MRS Company Partner mark in
+particular is low-resolution — if you have cleaner vector/PNG versions of any
+logo, drop them into `assets/` (same file names) or just upload them in
+Mailchimp and point the matching placeholder at them.
 
 ## Design notes
 - **Responsive:** two-column card grid on desktop collapses to a single column
