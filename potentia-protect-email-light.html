@@ -1,0 +1,326 @@
+<!--
+  ============================================================================
+  POTENTIA PROTECT: September 2026 client email, LIGHT VERSION
+  ============================================================================
+  Same copy and same brand styling as potentia-protect-email.html, but the
+  Potentia logo is the ONLY image the recipient's client has to download.
+
+  Everything else is pure HTML and CSS:
+    - Video block      -> gradient panel with a CSS play button (no thumbnail)
+    - Proof strip      -> white panel with typeset credentials (no logo images)
+    - CTA panel        -> gradient panel, no photo, full width
+
+  WHY USE THIS VERSION
+    - Renders fully with images blocked, which is the default in Outlook and
+      for a lot of corporate mail clients.
+    - Much lighter, so it is less likely to be clipped by Gmail.
+    - Nothing to break if a hosted image URL is ever moved.
+
+  NOTE ON MAILCHIMP
+    This is an HTML email, not the plain-text alternative. Mailchimp's
+    "Plain-Text" tab only accepts plain text: use potentia-protect-email.txt
+    for that. Use this file in the "Code your own / Paste in code" step if you
+    want the low-image build instead of potentia-protect-email.html.
+
+  Subject line (primary): How do we know this data is real?
+  ============================================================================
+-->
+<!--[if mso]>
+<style type="text/css">
+  table, td, div, p, a, h1, h2, h3 { font-family: Arial, Helvetica, sans-serif !important; }
+</style>
+<![endif]-->
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+  /* --- Client resets --- */
+  body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; }
+  img { -ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; display:block; }
+  table { border-collapse:collapse !important; }
+  body { margin:0 !important; padding:0 !important; width:100% !important; }
+  a { text-decoration:none; }
+
+  /* --- Responsive --- */
+  @media only screen and (max-width:600px) {
+    .container { width:100% !important; }
+    .px { padding-left:22px !important; padding-right:22px !important; }
+    .stack { display:block !important; width:100% !important; max-width:100% !important; height:auto !important; }
+    .stack-gap { height:14px !important; line-height:14px !important; font-size:14px !important; }
+    .h1 { font-size:44px !important; line-height:46px !important; }
+    .q { font-size:18px !important; line-height:24px !important; }
+    .video-h { height:150px !important; }
+    .center-sm { text-align:center !important; }
+  }
+</style>
+
+<!-- PREHEADER (hidden inbox preview text) -->
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#0b0323;">
+  Before you scope your Q4 studies, the answers worth having to hand.
+</div>
+
+<body style="margin:0;padding:0;background-color:#0b0323;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0b0323;">
+  <tr>
+    <td align="center" style="background-color:#0b0323;background-image:linear-gradient(180deg,#000000 0%,#070320 18%,#140836 46%,#1c0b45 72%,#12083a 100%);padding:0;">
+
+      <!-- ======================= MAIN CONTAINER ======================= -->
+      <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;">
+
+        <!-- ===================== HEADER ===================== -->
+        <!-- The Potentia logo is the only downloaded image in this build. -->
+        <tr>
+          <td class="px" style="padding:30px 40px 8px 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="left" valign="top" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:5px;font-weight:600;color:#9aa0b5;">
+                  POTENTIA
+                </td>
+                <td align="right" valign="top" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:20px;font-weight:700;color:#ff5a2c;">
+                  <a href="https://potentia-insight.co.uk/" target="_blank" style="text-decoration:none;border:0;color:#ff5a2c;">
+                    <img src="https://mcusercontent.com/efc1571b6be4ed703f757ec31/images/2a3c6621-c9ef-1cfc-4d7a-dab25f9a3d2c.png" width="130" alt="Potentia" style="display:inline-block;width:130px;max-width:130px;height:auto;border:0;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Big "Protect" wordmark -->
+        <tr>
+          <td class="px h1" style="padding:0 40px 6px 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:58px;line-height:60px;font-weight:800;color:#ff4a1c;letter-spacing:-1px;">
+            <a href="https://potentia-insight.co.uk/what-we-do/data-security-compliance-quality/" target="_blank" style="color:#ff4a1c;text-decoration:none;">Pr&#128274;tect</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:6px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:20px;line-height:26px;font-weight:600;color:#c7c2e0;">
+            Your data quality questions, answered
+          </td>
+        </tr>
+
+        <!-- ===================== OPENING ===================== -->
+        <tr>
+          <td class="px" style="padding:20px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#ffffff;">
+            September usually means scoping the next round of work. It also means fielding harder
+            questions than you were getting a year ago, about where respondents come from, how you
+            know they are human, and what happens to a survey answer written by a chatbot.
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:14px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#ffffff;">
+            Those are fair questions and you should not have to guess at the answers. Here are ours,
+            in a form you can forward to whoever is asking.
+          </td>
+        </tr>
+
+        <!-- ===================== QUESTION SET ===================== -->
+        <tr>
+          <td class="px" style="padding:30px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+
+            <!-- Q1 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              How do you know a respondent hasn't taken this survey three times?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              De-duplication runs across every sample source at once, not source by source. So a
+              respondent who belongs to three panels still only reaches your survey once. Unique IDs,
+              cookies and device fingerprinting back it up, and Verisoul screens for VPN and proxy
+              use, account linking and geolocation mismatches before anyone enters the survey.
+            </div>
+
+            <!-- rule -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#2d2352;">&nbsp;</td>
+            </tr></table>
+            <div style="height:26px;line-height:26px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <!-- Q2 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              What happens when an open end is written by AI?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              It gets caught twice. Alias and Aftercare score open ends in real time for nonsense,
+              low effort, inconsistency and LLM-generated content. Then a project manager reads every
+              open end, every day, looking for context mismatches and patterns the tools miss.
+              Anything that fails is removed and reconciled.
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#2d2352;">&nbsp;</td>
+            </tr></table>
+            <div style="height:26px;line-height:26px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <!-- Q3 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              How do you vet who is in the sample?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              Every supplier goes through formal onboarding and is assessed against ISO 20252 and the
+              ESOMAR 37. Performance is tracked project by project, and sources that underperform are
+              dropped rather than tolerated. Our own panels sit alongside specialist validated
+              audiences.
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#2d2352;">&nbsp;</td>
+            </tr></table>
+            <div style="height:26px;line-height:26px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <!-- Q4 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              What if something is wrong while we are still in field?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              Soft launch analytics flag anomalies in length of interview, incidence, drop-out and
+              quota behaviour before the study scales. Daily checks continue throughout fieldwork, so
+              problems get fixed while there is still time to fix them rather than explained
+              afterwards.
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#2d2352;">&nbsp;</td>
+            </tr></table>
+            <div style="height:26px;line-height:26px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <!-- Q5 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              Who checks the data before it reaches us?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              Interim tables wherever timing allows, so issues surface before fieldwork closes. Final
+              outputs are reviewed by both your project manager and the data team. SigDiff, our
+              in-house analytics team, can run meta-analysis across the dataset as a further layer
+              before release.
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#2d2352;">&nbsp;</td>
+            </tr></table>
+            <div style="height:26px;line-height:26px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+
+            <!-- Q6 -->
+            <div class="q" style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:19px;line-height:26px;font-weight:700;color:#ff4a1c;padding-bottom:8px;">
+              How is our own data held?
+            </div>
+            <div style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#e8e5f5;">
+              We have a dedicated Data Protection Officer and a Compliance Director, and we are
+              ISO 27001 certified through PJR. All client samples, personal data and sensitive
+              information are handled in line with GDPR and the relevant local legislation in every
+              market we field in.
+            </div>
+
+          </td>
+        </tr>
+
+        <!-- ===================== PROOF STRIP (typeset, no logo images) ===================== -->
+        <tr>
+          <td class="px" style="padding:34px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#c7c2e0;">
+            Signatories of the MRS Global Data Quality Pledge. MRS Company Partner. ISO 27001 certified.
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:16px 40px 0 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:12px;">
+              <tr>
+                <td align="center" valign="middle" style="padding:22px 16px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="stack" align="center" valign="top" width="33.33%" style="padding:6px 10px;text-align:center;">
+                        <div style="font-size:11px;letter-spacing:1.5px;font-weight:700;color:#ff4a1c;text-transform:uppercase;padding-bottom:4px;">MRS</div>
+                        <div style="font-size:14px;line-height:19px;font-weight:600;color:#1b1230;">Company Partner</div>
+                      </td>
+                      <td class="stack" align="center" valign="top" width="33.33%" style="padding:6px 10px;text-align:center;">
+                        <div style="font-size:11px;letter-spacing:1.5px;font-weight:700;color:#ff4a1c;text-transform:uppercase;padding-bottom:4px;">Global Data Quality</div>
+                        <div style="font-size:14px;line-height:19px;font-weight:600;color:#1b1230;">Pledge signatory</div>
+                      </td>
+                      <td class="stack" align="center" valign="top" width="33.33%" style="padding:6px 10px;text-align:center;">
+                        <div style="font-size:11px;letter-spacing:1.5px;font-weight:700;color:#ff4a1c;text-transform:uppercase;padding-bottom:4px;">ISO 27001</div>
+                        <div style="font-size:14px;line-height:19px;font-weight:600;color:#1b1230;">Certified through PJR</div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ===================== VIDEO BLOCK (no thumbnail image) ===================== -->
+        <tr>
+          <td class="px" style="padding:34px 40px 0 40px;">
+            <a href="https://vimeo.com/1191211292?fl=pl&fe=sh" target="_blank" style="text-decoration:none;color:#ffffff;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#3a1163" style="border-radius:14px;background-color:#3a1163;background-image:linear-gradient(135deg,#631d84 0%,#3a1163 55%,#152a9a 100%);">
+                <tr>
+                  <td class="video-h" height="170" valign="middle" align="center" style="height:170px;border-radius:14px;font-family:'Poppins',Arial,Helvetica,sans-serif;padding:26px 20px;">
+                    <!-- Play button -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                      <tr>
+                        <td align="center" valign="middle" width="66" height="66"
+                            style="width:66px;height:66px;background-color:#ff4a1c;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:66px;color:#ffffff;text-align:center;">
+                          &#9654;
+                        </td>
+                      </tr>
+                    </table>
+                    <div style="height:16px;line-height:16px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+                    <div style="font-size:18px;line-height:24px;font-weight:700;color:#ffffff;text-align:center;">Watch the three minute film</div>
+                    <div style="font-size:13px;line-height:20px;color:#e0d6f2;text-align:center;padding-top:4px;">Potentia Protect, end to end</div>
+                  </td>
+                </tr>
+              </table>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:14px 40px 0 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;color:#c7c2e0;">
+            If it is easier to show your team than tell them, our
+            <a href="https://vimeo.com/1191211292?fl=pl&fe=sh" target="_blank" style="color:#ff8a5c;font-weight:600;text-decoration:none;">three minute film</a>
+            walks through how Potentia Protect works end to end.
+          </td>
+        </tr>
+
+        <!-- ===================== CTA PANEL (no photo) ===================== -->
+        <tr>
+          <td class="px" style="padding:34px 40px 10px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#5c1a80" style="border-radius:18px;background-color:#5c1a80;background-image:linear-gradient(135deg,#7a1fa0 0%,#5a1a83 55%,#42146c 100%);">
+              <tr>
+                <td style="padding:28px 28px 28px 28px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+                  <div style="font-size:21px;line-height:28px;font-weight:700;color:#ffffff;padding-bottom:12px;">Want this walked through properly?</div>
+                  <div style="font-size:15px;line-height:23px;color:#e7ddf2;padding-bottom:20px;">
+                    If your team wants to go deeper on any of the above, or you would like us to talk
+                    through what quality control looks like on your specific projects, just reply to
+                    this email or get in touch with Suzy directly.
+                  </div>
+                  <!-- Signature block, ruled off rather than photographed -->
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+                    <td height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#8f5cb0;">&nbsp;</td>
+                  </tr></table>
+                  <div style="height:18px;line-height:18px;font-size:1px;mso-line-height-rule:exactly;">&nbsp;</div>
+                  <div style="font-size:18px;font-weight:700;color:#ffffff;line-height:24px;">Suzy Hassan</div>
+                  <div style="font-size:14px;color:#e7ddf2;line-height:20px;padding:2px 0 6px 0;">Managing Director &amp; Co-Founder</div>
+                  <div style="font-size:15px;line-height:22px;">
+                    <a href="mailto:suzy@potentia-insight.co.uk" style="color:#ffd9c7;font-weight:600;text-decoration:none;">suzy@potentia-insight.co.uk</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ===================== FOOTER ===================== -->
+        <tr>
+          <td class="px" style="padding:26px 40px 40px 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;text-align:center;">
+            <div style="font-size:11px;line-height:18px;color:#7f7ba0;">
+              &copy; Potentia Insight. All rights reserved.&nbsp;&nbsp;|&nbsp;&nbsp;Holborn Town Hall, 193-197 High Holborn, London, WC1V 7BD<br>
+              <a href="*|UNSUB|*" style="color:#7f7ba0;text-decoration:underline;">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="*|UPDATE_PROFILE|*" style="color:#7f7ba0;text-decoration:underline;">Update preferences</a>
+            </div>
+          </td>
+        </tr>
+
+      </table>
+      <!-- ======================= /MAIN CONTAINER ======================= -->
+
+    </td>
+  </tr>
+</table>
+</body>

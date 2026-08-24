@@ -17,6 +17,7 @@ Alternates: "The data quality questions your stakeholders are asking" /
 | File | Purpose |
 |------|---------|
 | `potentia-protect-email.html` | The email. Paste the whole file into Mailchimp. |
+| `potentia-protect-email-light.html` | Low-image build of the same email. The Potentia logo is the only downloaded image. |
 | `potentia-protect-email.txt` | Plain-text version (Mailchimp "Plain-Text" tab). |
 | `assets/potentia-logo.png` | Potentia logo, header top-right. |
 | `assets/video-thumbnail.png` | Still for the video block. |
@@ -45,6 +46,27 @@ Alternates: "The data quality questions your stakeholders are asking" /
 7. Footer: copyright, address, unsubscribe and update-preferences merge tags.
 
 Roughly 500 words of copy, about a third of the previous version.
+
+## Which build to send
+
+Both files carry identical copy, structure and brand styling. Pick one:
+
+- **`potentia-protect-email.html`** is the full build: hosted video thumbnail,
+  credential logo images, Suzy's photo.
+- **`potentia-protect-email-light.html`** is the low-image build. The Potentia
+  logo is the only image the recipient's client downloads. The video block
+  becomes a purple gradient panel with a CSS play button, the proof strip
+  becomes typeset credentials on the white panel, and the CTA panel uses a
+  ruled signature block instead of the photo.
+
+The light build is worth using if recipients sit behind clients that block
+images by default (common in Outlook and corporate mail), because it renders
+completely with images off. It is also much lighter, so less likely to be
+clipped by Gmail, and it cannot break if a hosted image URL moves.
+
+Note that the light build is still an HTML email, not the plain-text
+alternative. Mailchimp's "Plain-Text" tab only accepts plain text, so
+`potentia-protect-email.txt` is still what goes there.
 
 ## Design notes
 - **Visual weight** sits on the video block and the CTA panel. The question set
