@@ -1,61 +1,70 @@
-# Potentia Protect — Client Newsletter (HTML email)
+# Potentia Protect: Client Newsletter (HTML email)
 
-A responsive, Mailchimp-ready HTML email recreating the **Potentia Protect –
-Overview** PDF (dark theme, gradient "Key Pillars" cards, Top 3 takeaways,
-contact panel).
+A responsive, Mailchimp-ready HTML email for the **September 2026** send to
+existing Potentia Insight clients.
+
+The email answers the data quality questions clients are being asked by their
+own stakeholders, so it can be forwarded internally. It is a reference document,
+not a brochure: six questions in the client's voice, each with a short, specific
+answer naming the tools and standards involved.
+
+**Subject line (primary):** How do we know this data is real?
+Alternates: "The data quality questions your stakeholders are asking" /
+"Six questions to ask any research supplier".
+**Preheader:** Before you scope your Q4 studies, the answers worth having to hand.
 
 ## Files
 | File | Purpose |
 |------|---------|
 | `potentia-protect-email.html` | The email. Paste the whole file into Mailchimp. |
 | `potentia-protect-email.txt` | Plain-text version (Mailchimp "Plain-Text" tab). |
-| `assets/potentia-logo.png` | Potentia+ logo — header, top-right. |
-| `assets/video-thumbnail.png` | Still for the "Watch our short video" block. |
-| `assets/cred-mrs.png` | MRS Company Partner logo (credentials row). |
-| `assets/cred-gdq.png` | Global Data Quality (GDQ) logo (credentials row). |
-| `assets/cred-pjr.png` | PJR / ISO 27001 (UKAS) logo (credentials row). |
-| `assets/award-winner.png` | MRS Operations Awards 2025 — Winner badge. |
-| `assets/award-commended.png` | MRS Operations Awards 2025 — Highly Commended badge. |
-| `assets/suzy-hassan.png` | MD photo for the "To learn more" panel. |
+| `assets/potentia-logo.png` | Potentia logo, header top-right. |
+| `assets/video-thumbnail.png` | Still for the video block. |
+| `assets/cred-mrs.png` | MRS Company Partner logo (proof strip). |
+| `assets/cred-gdq.png` | Global Data Quality (GDQ) logo (proof strip). |
+| `assets/cred-pjr.png` | PJR / ISO 27001 (UKAS) logo (proof strip). |
+| `assets/suzy-hassan.png` | MD photo for the CTA panel. |
+| `assets/award-winner.png`, `assets/award-commended.png` | MRS Operations Awards 2025 badges. Not used in this version. |
+| `archive/` | The previous PDF-transcription version of the email, kept for reference. |
 
 ## How to use in Mailchimp
-1. Create a campaign → **Code your own → Paste in code**, and paste the entire
-   contents of `potentia-protect-email.html`.
-2. Upload the images in `assets/` to Mailchimp (Content Studio / the campaign
-   image manager) and copy their hosted URLs.
-3. In the pasted HTML, replace these placeholders:
-   - `{{POTENTIA_LOGO_URL}}` → hosted URL of `potentia-logo.png`
-   - `{{VIDEO_THUMB_URL}}` → hosted URL of `video-thumbnail.png`
-   - `{{CRED_MRS_URL}}` / `{{CRED_GDQ_URL}}` / `{{CRED_PJR_URL}}` → the three credential logos
-   - `{{AWARD_WINNER_URL}}` / `{{AWARD_COMMENDED_URL}}` → the two award badges
-   - `{{SUZY_PHOTO_URL}}` → hosted URL of `suzy-hassan.png`
-   - `{{VIDEO_URL}}` (appears twice) → the link to your video
+1. Create a campaign, choose **Code your own → Paste in code**, and paste the
+   entire contents of `potentia-protect-email.html`.
+2. No image hosting is needed. All `<img>` and background URLs already point at
+   the Mailchimp-hosted assets used by the previous send.
+3. Paste `potentia-protect-email.txt` into the campaign's Plain-Text tab.
 4. Send yourself a test to check on desktop, mobile and (if you use it) Outlook.
 
-**Logo note:** the credential and award logos were extracted from the source
-PDF, so they are only as sharp as the originals. The MRS Company Partner mark in
-particular is low-resolution — if you have cleaner vector/PNG versions of any
-logo, drop them into `assets/` (same file names) or just upload them in
-Mailchimp and point the matching placeholder at them.
+## Structure
+1. Header: Potentia lockup, logo, "Pr🔒tect" wordmark, standfirst.
+2. Opening: two short paragraphs framing the questions.
+3. Six questions: orange heading, plain body copy beneath, thin rules between.
+4. Proof strip: one line of copy plus the white panel of credential logos.
+5. Video block: thumbnail and play button linking to the three minute film.
+6. CTA panel: purple gradient, Suzy's photo, reply-to-this-email as the action.
+7. Footer: copyright, address, unsubscribe and update-preferences merge tags.
+
+Roughly 500 words of copy, about a third of the previous version.
 
 ## Design notes
-- **Responsive:** two-column card grid on desktop collapses to a single column
-  on phones; the Top 3 circles and contact panel also stack.
-- **Masonry cards:** the Key Pillars use two independent columns, so cards flow
-  and stagger to their own height instead of aligning row-by-row — this removes
-  the dark gaps caused by mismatched card lengths. Respondent Verification is a
-  card in the left column. The two columns are balanced to end at roughly the
-  same point. On mobile the columns stack (left column cards first, then right).
-- **Why no click-to-reveal accordion:** interactive "click heading to expand"
-  isn't reliable in email — JavaScript is always blocked, and Gmail/Outlook/most
-  webmail strip the CSS/`<details>` tricks that fake it. If the toggle is
-  stripped, those clients would show headings with no content, so the content is
-  always kept visible. (A real accordion is only safe on a hosted web page, e.g.
-  a "view in browser" landing page — happy to build that separately if wanted.)
-- **Everything except the two photos is pure HTML/CSS** — the dark background,
-  gradient cards, chips, circles and contact panel need no image hosting.
-- **Outlook:** CSS gradients aren't supported by Outlook's Word engine, so cards
-  fall back to a solid brand colour (orange / purple / blue). Rounded corners
-  also square off in Outlook. This is expected and still on-brand.
+- **Visual weight** sits on the video block and the CTA panel. The question set
+  is deliberately light: headings and body copy on the dark background, no cards,
+  so the answers read as reference material rather than brochure furniture.
+- **Responsive:** 600px container, single column below 600px. The proof strip
+  logos and the CTA panel stack on phones.
+- **Copy rules:** no em dashes, no exclamation marks, named tools and named
+  standards throughout.
+- **Accuracy:** ISO 27001 is *certified through PJR*, not merely aligned to the
+  principles. Supplier vetting is against *ISO 20252 and the ESOMAR 37*, not
+  "recognised industry benchmarks". Do not revert to the PDF wording.
+- **Outlook:** CSS gradients are not supported by Outlook's Word engine, so the
+  background and CTA panel fall back to a solid brand colour. Rounded corners
+  also square off. This is expected and still on-brand.
 - The header padlock uses an emoji (🔒). To match the exact logo, replace the
   `Pr&#128274;tect` text block with a hosted image of the Protect wordmark.
+
+## Dropped from the previous version
+- The twelve gradient pillar cards.
+- The TOP 3 TAKEAWAYS circles.
+- The two MRS Operations Awards 2025 badges in the contact panel.
+- The website link as a CTA. There is now one action, which is to reply.
