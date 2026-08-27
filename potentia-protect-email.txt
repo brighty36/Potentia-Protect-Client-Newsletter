@@ -4,13 +4,14 @@ Preheader: Before you scope your Q4 studies, the answers worth having to hand.
 POTENTIA PROTECT
 How we're tackling your biggest data quality concerns
 
-September usually means scoping the next round of work. It also means
-fielding harder questions than a year ago about where respondents come
-from, how you know they are human, and what happens to a survey answer
-written by a chatbot.
+Questions about research quality are changing. Verification, duplicate
+respondents, AI-generated answers and sample provenance are increasingly
+part of the conversation. When someone asks how you know your research
+data is real, you need a better answer than "we trust our sample
+supplier".
 
-Those are fair questions, and you should not have to guess at the
-answers. Here are ours, ready to forward.
+You need clear answers, especially when those questions come from
+colleagues, procurement teams or end clients. So here are ours.
 
 
 HOW DO YOU KNOW A RESPONDENT HASN'T TAKEN THIS SURVEY THREE TIMES?
@@ -67,7 +68,7 @@ walks through how Potentia Protect works end to end:
 https://vimeo.com/1191211292?fl=pl&fe=sh
 
 
-WANT THIS WALKED THROUGH PROPERLY?
+WANT TO TALK THIS THROUGH IN PERSON?
 If your team wants to go deeper on any of the above, or you would like us
 to talk through what quality control looks like on your specific
 projects, just reply to this email or get in touch with Suzy directly.
