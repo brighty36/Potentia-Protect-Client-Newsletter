@@ -6,11 +6,10 @@
   typed email rather than a designed campaign:
 
     - White background, dark text, no dark theme and no gradient panels.
-    - Normal reading width, left aligned, the way a message from a colleague
-      lands in the inbox.
-    - The Potentia logo is the only image. Nothing else is downloaded.
-    - The video is a plain text link. Credentials are a line of text.
-      The sign-off is a typed signature.
+    - Full width reading column, left aligned, the way a message from a
+      colleague lands in the inbox.
+    - The Potentia logo and the accreditation strip are the only images.
+    - The video is a plain text link. The sign-off is a typed signature.
 
   WHY USE THIS VERSION
     - Reads as a personal message, so it is more likely to be forwarded
@@ -59,7 +58,7 @@
     <td align="left" valign="top" style="background-color:#ffffff;padding:0;">
 
       <!-- ======================= MAIN CONTAINER ======================= -->
-      <table role="presentation" class="container" width="620" cellpadding="0" cellspacing="0" border="0" style="width:620px;max-width:620px;">
+      <table role="presentation" class="container" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:100%;">
 
         <!-- ===================== LOGO ===================== -->
         <!-- The only image in this build. -->
@@ -75,19 +74,20 @@
         <tr>
           <td class="px" style="padding:0 32px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:23px;color:#222222;">
 
-            <p style="margin:0 0 16px 0;font-weight:bold;color:#111111;">
-              How we're tackling your biggest data quality concerns
+            <p style="margin:0 0 16px 0;">
+              Hi *|FNAME|*,
             </p>
 
             <p style="margin:0 0 16px 0;">
-              September usually means scoping the next round of work. It also means fielding harder
-              questions than a year ago about where respondents come from, how you know they are
-              human, and what happens to a survey answer written by a chatbot.
+              Questions about research quality are changing. Verification, duplicate respondents,
+              AI-generated answers and sample provenance are increasingly part of the conversation.
+              When someone asks how you know your research data is real, you need a better answer
+              than "we trust our sample supplier".
             </p>
 
             <p style="margin:0 0 16px 0;">
-              Those are fair questions, and you should not have to guess at the answers. Here are
-              ours, ready to forward.
+              You need clear answers, especially when those questions come from colleagues,
+              procurement teams or end clients. So here are ours.
             </p>
 
             <!-- ===================== QUESTION SET ===================== -->
@@ -153,11 +153,20 @@
               markets we operate in. Your data privacy is always our priority.
             </p>
 
-            <!-- ===================== PROOF LINE ===================== -->
-            <p style="margin:0 0 20px 0;color:#555555;">
-              Signatories of the MRS Global Data Quality Pledge. MRS Company Partner.
-              ISO 27001 certified.
-            </p>
+            <!-- ===================== ACCREDITATION STRIP ===================== -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px 0;">
+              <tr>
+                <td align="left" valign="middle" style="padding:0 16px 0 0;">
+                  <img src="https://mcusercontent.com/efc1571b6be4ed703f757ec31/images/c767d62a-353c-1044-2288-1b2dc5506544.png" width="130" alt="Signatories of the MRS Global Data Quality Pledge. MRS Company Partner. ISO 27001 certified." style="width:130px;max-width:130px;height:auto;border:0;">
+                </td>
+                <td align="left" valign="middle" style="padding:0 16px 0 0;">
+                  <img src="https://mcusercontent.com/efc1571b6be4ed703f757ec31/images/2127dc9d-c291-fcb0-2004-8d14d9315c6c.jpg" width="130" alt="" style="width:130px;max-width:130px;height:auto;border:0;">
+                </td>
+                <td align="left" valign="middle">
+                  <img src="https://mcusercontent.com/efc1571b6be4ed703f757ec31/images/1d547472-9cd0-7833-a312-ddb739d3b4a7.jpg" width="130" alt="" style="width:130px;max-width:130px;height:auto;border:0;">
+                </td>
+              </tr>
+            </table>
 
             <!-- ===================== VIDEO LINK ===================== -->
             <p style="margin:0 0 24px 0;">
