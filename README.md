@@ -20,7 +20,7 @@ Alternates: "The data quality questions your stakeholders are asking" /
 | `potentia-protect-email-light.html` | Plain build: same copy typed as an ordinary email, white background, logo is the only image. |
 | `potentia-protect-email.txt` | Plain-text version (Mailchimp "Plain-Text" tab). |
 | `assets/potentia-logo.png` | Potentia logo, header top-right. |
-| `assets/video-thumbnail.png` | Still for the video block. |
+| `assets/video-thumbnail.png` | Unused. Was the still for the video block, now replaced by a PDF link. |
 | `assets/cred-mrs.png` | MRS Company Partner logo (proof strip). |
 | `assets/cred-gdq.png` | Global Data Quality (GDQ) logo (proof strip). |
 | `assets/cred-pjr.png` | PJR / ISO 27001 (UKAS) logo (proof strip). |
@@ -39,9 +39,9 @@ Alternates: "The data quality questions your stakeholders are asking" /
 ## Structure
 1. Header: Potentia lockup, logo, "Pr🔒tect" wordmark, standfirst.
 2. Opening: two short paragraphs framing the questions.
-3. Six questions: orange heading, plain body copy beneath, thin rules between.
+3. Six questions: orange heading, plain body copy beneath, vertical spacing between.
 4. Proof strip: one line of copy plus the white panel of credential logos.
-5. Video block: thumbnail and play button linking to the three minute film.
+5. PDF block: icon and button linking to the PDF overview.
 6. CTA panel: purple gradient, Suzy's photo, reply-to-this-email as the action.
 7. Footer: copyright, address, unsubscribe and update-preferences merge tags.
 
@@ -51,13 +51,13 @@ Roughly 500 words of copy, about a third of the previous version.
 
 Both files carry identical copy, structure and brand styling. Pick one:
 
-- **`potentia-protect-email.html`** is the full build: hosted video thumbnail,
+- **`potentia-protect-email.html`** is the full build: hosted PDF-link block,
   credential logo images, Suzy's photo.
 - **`potentia-protect-email-light.html`** is the plain build. It carries the
   same copy but is presented as an ordinary typed email: white background,
-  dark text, normal reading width, no dark theme and no panels. The Potentia
-  logo is the only image. The video is a text link, the credentials are a line
-  of text, and it ends with a typed signature from Suzy.
+  dark text, full-width reading column, no dark theme and no panels. The
+  Potentia logo and the accreditation strip are the only images. The PDF
+  overview is a text link, and it ends with a typed signature from Suzy.
 
 The plain build reads as a personal message rather than a campaign, which is
 the point: this email is meant to be forwarded internally, and a forwarded
@@ -68,18 +68,19 @@ enough that Gmail will not clip it, and cannot break if a hosted image URL moves
 Two copy differences in the plain build, both consequences of it being a typed
 message rather than a designed one:
 
-- The "Pr🔒tect" wordmark and the "Your data quality questions, answered"
-  standfirst are dropped. A typed email does not open with a masthead.
+- The "Pr🔒tect" wordmark and the "How we're tackling your biggest data
+  quality concerns" standfirst are dropped. A typed email does not open with
+  a masthead. It opens with "Hi *|FNAME|*," instead.
 - The close is in the first person ("get in touch with me directly") and signs
-  off "Suzy", rather than referring to her in the third person. The "Want this
-  walked through properly?" heading is dropped for the same reason.
+  off "Suzy", rather than referring to her in the third person. The "Want to
+  talk this through in person?" heading is dropped for the same reason.
 
 Note that the plain build is still an HTML email, not the plain-text
 alternative. Mailchimp's "Plain-Text" tab only accepts plain text, so
 `potentia-protect-email.txt` is still what goes there.
 
 ## Design notes
-- **Visual weight** sits on the video block and the CTA panel. The question set
+- **Visual weight** sits on the PDF block and the CTA panel. The question set
   is deliberately light: headings and body copy on the dark background, no cards,
   so the answers read as reference material rather than brochure furniture.
 - **Responsive:** 600px container, single column below 600px. The proof strip
